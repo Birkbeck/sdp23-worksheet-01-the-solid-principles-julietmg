@@ -6,7 +6,6 @@ public class Eagle implements Bird {
         this.numberOfFeathers = initialFeatherCount;
     }
 
-    @Override
     public void fly() {
         this.currentLocation = "in the air";
     }
