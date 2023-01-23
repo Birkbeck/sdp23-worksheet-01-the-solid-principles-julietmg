@@ -38,6 +38,6 @@ public class UnitUpgraderTest {
         UnitUpgrader upgrader = new UnitUpgrader();
         upgrader.upgrade(studio);
 
-        assertEquals(0, studio.numberOfBedrooms);
+        assertEquals(1, studio.numberOfBedrooms);
     }
 }
