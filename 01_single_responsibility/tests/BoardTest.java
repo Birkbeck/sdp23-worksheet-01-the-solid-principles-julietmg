@@ -52,7 +52,7 @@ public class BoardTest {
     public void testPrintsBoardToConsole() {
         Board board = new Board();
         System.setOut(new PrintStream(outContent));
-        board.display();
+        BoardDisplay.display(board);
         assertEquals("0 | 1 | 2\n3 | 4 | 5\n6 | 7 | 8", outContent.toString());
     }
 }
