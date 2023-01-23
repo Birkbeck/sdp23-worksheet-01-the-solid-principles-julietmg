@@ -1,19 +1,11 @@
 public class Greeter {
-    String formality;
+    GreetingInterface greetingInterface = new DefaultGreeting(); //If someone won't set the formality, the firld will be set to default
 
     public String greet() {
-        if (this.formality == "formal") {
-            return "Good evening";
-        } else if (this.formality == "casual") {
-            return "Goodday?";
-        } else if (this.formality == "intimate") {
-            return "Hello darling!";
-        } else {
-            return "Hello.";
-        }
+        return greetingInterface.greeting();
     }
 
-    public void setFormality(String formality) {
-        this.formality = formality;
+    public void setFormality(GreetingInterface greetingInterface) {
+        this.greetingInterface = greetingInterface;
     }
 }
